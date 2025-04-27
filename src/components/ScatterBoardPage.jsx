@@ -15,7 +15,7 @@ const plans = [
       "Support 24/7"
     ],
     description:
-      "I am interested in the 3-month ScatterBoard subscription plan for KSA hotels.",
+      "I am interested in the 3-month ScatterBoard subscription plan for hotels.",
   },
   {
     id: "plan-6mo",
@@ -29,7 +29,7 @@ const plans = [
       "Support 24/7"
     ],
     description:
-      "I am interested in the 6-month ScatterBoard subscription plan for KSA hotels.",
+      "I am interested in the 6-month ScatterBoard subscription plan for hotels.",
   },
   {
     id: "plan-12mo",
@@ -44,7 +44,7 @@ const plans = [
       "Support 24/7"
     ],
     description:
-      "I am interested in the 12-month ScatterBoard subscription plan for KSA hotels.",
+      "I am interested in the 12-month ScatterBoard subscription plan for  hotels.",
   },
 ];
 
