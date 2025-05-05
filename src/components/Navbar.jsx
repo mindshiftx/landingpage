@@ -35,7 +35,7 @@ const Navbar = () => {
               alt="MindshiftX Logo" 
               className="h-10 mr-2"
             />
-            <span className="text-glow">MindShift</span>
+            <span className="text-glow">MindShiftX</span>
           </motion.a>
           
           {/* Desktop Menu */}
