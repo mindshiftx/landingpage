@@ -1,34 +1,43 @@
+<!-- /public/index.html  –  MindShiftX landing page -->
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    
-    <!-- Add Google Verification Tag Here -->
-    <meta name="google-site-verification" content="gwgnh5zfT1xbqzKX_" /> 
-    
-    <!-- Google tag (gtag.js) -->
-    <!-- Replace GA_MEASUREMENT_ID with your actual ID -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script> 
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      // Replace GA_MEASUREMENT_ID with your actual ID
-      gtag('config', 'GA_MEASUREMENT_ID'); 
-    </script>
-    
-    <title>React App</title>
+    <!-- ▸▸ Favicons (now live in /public/images/) ◂◂ -->
+    <link rel="apple-touch-icon" sizes="180x180"
+          href="%PUBLIC_URL%/images/apple-touch-icon.png" />
+
+    <!-- RealFaviconGenerator gave you a 96×96 PNG -->
+    <link rel="icon" type="image/png" sizes="96x96"
+          href="%PUBLIC_URL%/images/favicon-96x96.png" />
+
+    <!-- Fallback ICO (works for most browsers / Google) -->
+    <link rel="shortcut icon" href="%PUBLIC_URL%/images/favicon.ico" />
+
+    <!-- Optional PWA + Android icons (rename if your ZIP had different names) -->
+    <link rel="manifest" href="%PUBLIC_URL%/images/site.webmanifest" />
+    <!-- If you have 192×192 or 512×512 files, uncomment and adjust: -->
+    <!--
+    <link rel="icon" type="image/png" sizes="192x192"
+          href="%PUBLIC_URL%/images/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="512x512"
+          href="%PUBLIC_URL%/images/android-chrome-512x512.png" />
+    -->
+
+    <!-- Basic metadata -->
+    <title>MindShiftX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description"
+          content="MindShiftX helps you build one‑minute micro‑habits to rewire your brain for success." />
+
+    <!-- SEO niceties (optional) -->
+    <link rel="canonical" href="https://mindshiftx.vercel.app/" />
+
+    <!-- CRA manifest (keep for PWA installs) -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
   </head>
+
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>

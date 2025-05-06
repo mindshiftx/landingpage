@@ -157,6 +157,60 @@ const About = () => (
           <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-space-accent rounded-full opacity-20" />
         </motion.div>
       </div>
+
+      {/* -------- Professional Web Presence -------- */}
+      <div className="flex flex-col lg:flex-row items-center gap-12 mt-24">
+        {/* Left-hand image block */}
+        <motion.div
+          className="lg:w-1/2 relative"
+          initial={{ opacity: 0, x: -50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <div className="relative h-[400px] w-full rounded-xl overflow-hidden">
+            <div className="absolute inset-0 bg-gradient-to-r from-space-blue/30 to-space-accent/30 mix-blend-overlay"></div>
+            <div className="absolute inset-0 border border-gray-700 rounded-xl"></div>
+            <img
+              src="/images/build.jpg" // Ensure this image exists in your public/images folder
+              alt="Professional Web Development"
+              className="absolute inset-0 w-full h-full object-cover opacity-40"
+            />
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="text-center bg-space-dark/70 p-6 rounded-xl backdrop-blur-sm">
+              </div>
+            </div>
+          </div>
+          {/* decorative circles */}
+          <div className="absolute -top-4 -left-4 w-24 h-24 border border-space-accent rounded-full opacity-20" />
+          <div className="absolute -bottom-4 -right-4 w-32 h-32 border border-space-accent rounded-full opacity-20" />
+        </motion.div>
+
+        {/* Right-hand text block */}
+        <motion.div
+          className="lg:w-1/2"
+          initial={{ opacity: 0, x: 50 }}
+          whileInView={{ opacity: 1, x: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6 }}
+        >
+          <h2 className="text-3xl md:text-4xl font-display font-bold mb-6 text-glow">
+            Professional Web Presence
+          </h2>
+          <p className="text-lg text-gray-300 mb-6">
+            We craft stunning, responsive, and professional websites tailored for individuals and companies, ensuring a strong online identity.
+          </p>
+          <p className="text-lg text-gray-300 mb-6">
+            Our team focuses on creating unique digital experiences that reflect your brand, engage your audience, and drive growth.
+          </p>
+          <p className="text-lg text-gray-300">
+            Elevate your online presence with a custom-built website designed to meet your specific goals and make a lasting impression.
+          </p>
+
+          {/* CTA – Web Development */}
+          
+        </motion.div>
+      </div>
     </div>
   </section>
 );
