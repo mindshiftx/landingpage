@@ -74,7 +74,60 @@ const Contact = ({ initialMessage = "" }) => {
   ];
 
   return (
-    <section className="py-20 bg-space-dark" id="contact">
+    <section className="py-20 bg-space-dark relative overflow-hidden" id="contact">
+      {/* Thunder & Lightning Background */}
+      <div className="absolute inset-0 pointer-events-none z-0">
+        {/* Lightning bolt SVGs */}
+        <svg className="absolute left-1/4 top-10 animate-lightning" width="90" height="200" viewBox="0 0 80 200" fill="none">
+          <polyline points="40,0 50,60 30,60 60,140 40,140 60,200" stroke="#fffbe6" strokeWidth="6" strokeLinejoin="round" filter="url(#glow)" />
+          <defs>
+            <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+        <svg className="absolute right-1/3 top-1/2 animate-lightning delay-1000" width="60" height="150" viewBox="0 0 60 150" fill="none">
+          <polyline points="30,0 40,40 20,40 50,100 30,100 50,150" stroke="#fffbe6" strokeWidth="5" strokeLinejoin="round" filter="url(#glow2)" />
+          <defs>
+            <filter id="glow2" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="5" result="coloredBlur"/>
+              <feMerge>
+                <feMergeNode in="coloredBlur"/>
+                <feMergeNode in="SourceGraphic"/>
+              </feMerge>
+            </filter>
+          </defs>
+        </svg>
+        {/* Lightning flash overlay */}
+        <div className="absolute inset-0 bg-white opacity-0 animate-flash pointer-events-none"></div>
+      </div>
+      <style>
+        {`
+          @keyframes lightning {
+            0%, 97%, 100% { opacity: 0; }
+            98% { opacity: 1; }
+            99% { opacity: 0.7; }
+          }
+          .animate-lightning {
+            animation: lightning 4s infinite;
+          }
+          .animate-lightning.delay-1000 {
+            animation-delay: 2s;
+          }
+          @keyframes flash {
+            0%, 97%, 100% { opacity: 0; }
+            98% { opacity: 0.18; }
+            99% { opacity: 0; }
+          }
+          .animate-flash {
+            animation: flash 4s infinite;
+          }
+        `}
+      </style>
       <div className="container mx-auto px-4">
         {/* -------- heading -------- */}
         <div className="text-center mb-16">
